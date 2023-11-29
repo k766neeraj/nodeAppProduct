@@ -1,5 +1,6 @@
 const mongoose = require('mongoose')
 
+// creating schema named itemschema for the product
 const itemschema = mongoose.Schema({
     title:{
         type:String,
@@ -19,6 +20,7 @@ const itemschema = mongoose.Schema({
     }
 })
 
+// creating a modal of the itemschema
 const Prod = mongoose.model('item',itemschema)
 
 module.exports = Prod
